@@ -1,4 +1,4 @@
-import { Flex } from "@/shared/Flex";
+import { Flex } from "@/shared/ui/Flex";
 import { ReactNode, memo } from "react";
 
 interface IconProps {

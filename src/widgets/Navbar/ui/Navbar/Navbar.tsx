@@ -1,13 +1,13 @@
 import { memo } from "react";
-import { Badge } from "@/shared/Badge";
-import { Flex } from "@/shared/Flex";
-import { Logo } from "@/shared/Logo";
-import { Text } from "@/shared/Text";
+import { Badge } from "@/shared/ui/Badge";
 import User from "@/shared/assets/user.svg";
 import Search from "@/shared/assets/search.svg";
-import { Container } from "@/shared/Container";
 import { badges } from "../../model/Navbar";
 import { Icon } from "../Icon/Icon";
+import { Flex } from "@/shared/ui/Flex";
+import { Logo } from "@/shared/ui/Logo";
+import { Text } from "@/shared/ui/Text";
+import { Container } from "@/shared/ui/Container";
 
 interface NavbarProps {}
 

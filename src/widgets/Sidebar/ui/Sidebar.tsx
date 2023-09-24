@@ -1,8 +1,8 @@
-import { Flex } from "@/shared/Flex";
-import { Text } from "@/shared/Text";
 import { memo } from "react";
 import Power from "@/shared/assets/power.svg";
 import { items } from "../model/Sidebar";
+import { Flex } from "@/shared/ui/Flex";
+import { Text } from "@/shared/ui/Text";
 
 interface SidebarProps {}
 

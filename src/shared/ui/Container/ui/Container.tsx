@@ -1,7 +1,7 @@
 import { PropsWithChildren } from "react";
 
 interface ContainerProps extends PropsWithChildren {
-  className: string;
+  className?: string;
 }
 
 export const Container = (props: ContainerProps) => {
