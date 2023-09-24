@@ -1,4 +1,5 @@
 import { PropsWithChildren } from "react";
+import cn from "classnames";
 
 interface BadgeProps extends PropsWithChildren {
   theme?: "orange" | "gray";
@@ -10,9 +11,9 @@ export const Badge = (props: BadgeProps) => {
   let classes = "";
   if (theme === "orange") classes += "bg-orange-500 text-white ";
   if (theme === "gray") classes += "bg-gray-500 text-black ";
-  if (size === "md") classes += "px-2 py-1 ";
-  if (size === "xs") classes += "p-3 ";
+  if (size === "md") classes += "p-3 ";
+  if (size === "xs") classes += "py-1 px-2 ";
   return (
-    <div className={`inline-block rounded-3xl  ${classes}`}>{children}</div>
+    <div className={cn(["inline-block rounded-3xl", classes])}>{children}</div>
   );
 };
