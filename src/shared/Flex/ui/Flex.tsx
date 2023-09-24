@@ -5,6 +5,7 @@ interface FlexProps extends PropsWithChildren {
   align?: "center" | "start" | "end";
   justify?: "space-between" | "space-around" | "center" | "start" | "end";
   gap?: string | number;
+  className?: string;
 }
 
 const justifyMapper = {
@@ -21,15 +22,6 @@ const alignMapper = {
   end: "items-end",
 };
 
-const gapMapper = {
-  xs: "gap-1",
-  sm: "gap-2",
-  md: "gap-3",
-  lg: "gap-4",
-  xl: "gap-5",
-  none: "gap-0",
-};
-
 const directionMapper = {
   col: "flex-col",
   row: "flex-row",
@@ -41,14 +33,15 @@ export const Flex = (props: FlexProps) => {
     direction = "row",
     justify = "start",
     children,
-    gap = "none",
+    gap,
+    className = "",
   } = props;
   return (
     <div
       style={{
         gap: gap,
       }}
-      className={`flex ${justifyMapper[justify]} ${alignMapper[align]} ${directionMapper[direction]}`}
+      className={`flex ${justifyMapper[justify]} ${alignMapper[align]} ${directionMapper[direction]} ${className}`}
     >
       {children}
     </div>
