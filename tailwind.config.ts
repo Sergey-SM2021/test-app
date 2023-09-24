@@ -6,6 +6,7 @@ const config: Config = {
     colors: {
       gray: {
         "500": "#F2F2F2",
+        "600": "#848484",
       },
       white: {
         "500": "#fff",
