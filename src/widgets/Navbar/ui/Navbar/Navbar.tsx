@@ -13,8 +13,8 @@ interface NavbarProps {}
 
 export const Navbar = memo((props: NavbarProps) => {
   return (
-    <Container>
-      <Flex gap={105} align="center" className="h-[76] bg-red-500">
+    <Container className="h-[76px] bg-red-500 flex items-center w-full">
+      <Flex gap={105} align="center" className="w-full">
         <Logo />
         <Flex className="flex-auto">
           <Flex gap={20} className="flex-auto">
