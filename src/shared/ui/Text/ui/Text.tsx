@@ -9,8 +9,8 @@ interface TextProps extends PropsWithChildren {
 export const Text = memo((props: TextProps) => {
   const { theme = "black", className } = props;
   let classNames = "";
-  if (theme === "white") classNames = "text-white";
-  if (theme === "black") classNames = "text-black";
+  if (theme === "white") classNames = "text-white-500";
+  if (theme === "black") classNames = "text-black-500";
   return <p className={cn([classNames, className])}>{props.children}</p>;
 });
 

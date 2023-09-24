@@ -6,7 +6,7 @@ import { Sidebar } from "@/widgets/Sidebar";
 
 export default function Home() {
   return (
-    <>
+    <div className="bg-gray-500">
       <Navbar />
       <Container>
         <Flex>
@@ -14,6 +14,6 @@ export default function Home() {
           <Intro />
         </Flex>
       </Container>
-    </>
+    </div>
   );
 }

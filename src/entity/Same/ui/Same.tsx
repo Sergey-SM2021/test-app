@@ -13,7 +13,7 @@ interface SameProps {
 export const Same = memo((props: SameProps) => {
   const { list } = props;
   return (
-    <Flex direction="col" className="p-8" gap={24}>
+    <Flex direction="col" className="p-8 bg-white-500" gap={24}>
       <Heading>{"Читайте также >"}</Heading>
       <Flex gap={16}>
         {list.map((el, index) => (

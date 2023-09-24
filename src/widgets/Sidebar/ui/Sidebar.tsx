@@ -8,9 +8,9 @@ interface SidebarProps {}
 
 export const Sidebar = memo((props: SidebarProps) => {
   return (
-    <div className="bg-gray-500 w-[264px]">
-      <Flex gap={12} className="bg-black px-5 py-3 rounded-xl">
-        <Power className="text-white" />
+    <div className="w-[264px]">
+      <Flex gap={12} className="bg-black-500 px-5 py-3 rounded-xl">
+        <Power className="text-orange-500" />
         <Text theme="white">Лента</Text>
       </Flex>
       {items.map((el, index) => (

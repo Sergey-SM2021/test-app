@@ -13,7 +13,7 @@ interface TapeProps {
 export const Tape = memo((props: TapeProps) => {
   const { list } = props;
   return (
-    <div className="pt-8 w-full">
+    <div className="pt-8 w-full bg-white-500 rounded-xl">
       <Flex direction="col" gap={24}>
         <Flex direction="col" className="px-8" gap={24}>
           <Heading>Лента</Heading>
@@ -36,7 +36,7 @@ export const Tape = memo((props: TapeProps) => {
             ))}
           </Flex>
         </Flex>
-        <marquee className={"bg-black text-white h-10 rounded-b-lg"}>
+        <marquee className={"bg-black-500 text-white-500 h-10 rounded-b-lg"}>
           🔥 ОЧЕНЬ ВАЖНАЯ НОВОСТЬ 🔥 ОЧЕНЬ ВАЖНАЯ НОВОСТЬ 🔥 ОЧЕНЬ ВАЖНАЯ
           НОВОСТЬ 🔥 ОЧЕНЬ ВАЖНАЯ НОВОСТЬ 🔥ОЧЕНЬ ВАЖНАЯ НОВОСТЬ 🔥 ОЧЕНЬ ВАЖНАЯ
           НОВОСТЬ 🔥 ОЧЕНЬ ВАЖНАЯ НОВОСТЬ 🔥 ОЧЕНЬ ВАЖНАЯ НОВОСТЬ 🔥 ОЧЕНЬ
