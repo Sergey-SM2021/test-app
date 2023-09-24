@@ -5,7 +5,8 @@ const config: Config = {
   theme: {
     colors: {
       gray: {
-        "500": "#F2F2F2",
+        "400": "#F2F2F2",
+        "500": "#333333",
         "600": "#848484",
       },
       white: {
@@ -13,6 +14,7 @@ const config: Config = {
       },
       black: {
         "500": "#262626",
+        "900": "#000",
       },
       orange: {
         "500": "#FF6B00",

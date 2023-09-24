@@ -10,7 +10,7 @@ export const Badge = (props: BadgeProps) => {
   const { children, theme = "orange", size = "md" } = props;
   let classes = "";
   if (theme === "orange") classes += "bg-orange-500 text-white ";
-  if (theme === "gray") classes += "bg-gray-500 text-black ";
+  if (theme === "gray") classes += "bg-gray-400 text-black ";
   if (size === "md") classes += "p-3 ";
   if (size === "xs") classes += "py-1 px-2 ";
   return (

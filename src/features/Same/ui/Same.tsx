@@ -23,7 +23,7 @@ export const Same = memo((props: SameProps) => {
             direction="col"
             gap={24}
             key={index}
-            className="bg-gray-500 rounded-xl px-4 py-3"
+            className="bg-gray-400 rounded-xl px-4 py-3"
           >
             <Flex direction="col" gap={8}>
               <Flex align="center" gap={8}>
