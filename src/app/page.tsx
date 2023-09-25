@@ -1,4 +1,4 @@
-import { Intro } from "@/pages/Intro";
+import { Intro } from "@/page/Intro";
 import { Container } from "@/shared/ui/Container";
 import { Flex } from "@/shared/ui/Flex";
 import { Footer } from "@/widgets/Footer";
