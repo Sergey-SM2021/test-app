@@ -11,7 +11,7 @@ interface IntroProps {}
 export const Intro = memo((props: IntroProps) => {
   return (
     <div className="w-full">
-      <Flex direction="col" className="pb-7" gap={12}>
+      <Flex direction="col" gap={12}>
         <Flex gap={24}>
           <Tape list={news} />
           <Ad />

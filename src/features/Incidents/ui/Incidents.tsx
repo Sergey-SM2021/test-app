@@ -16,13 +16,18 @@ export const Incidents = memo((props: IncidentsProps) => {
   const { list, className = "" } = props;
   return (
     <Flex direction="col" gap={16} className={cn(["pt-4", className])}>
-      <Heading className="pl-4 font-bold">{"Происшествия >"}</Heading>
+      <Heading className="pl-8 font-bold">{"Происшествия >"}</Heading>
       <Flex gap={"12px"}>
         {list.map((el, index) => (
-          <Flex key={index} direction="col" className="bg-white-500 w-[264px]">
+          <Flex
+            key={index}
+            direction="col"
+            className="bg-white-500 w-[264px] rounded-xl"
+            gap={16}
+          >
             <Flex direction="col" gap={8}>
               <Image src={el.media} alt="Изображение не найдено" />
-              <Text className="font-light px-3" theme="gray">
+              <Text className="font-light px-3 text-xs" theme="gray">
                 {el.date}
               </Text>
               <Text className="font-medium px-3">{el.text}</Text>

@@ -1,12 +1,10 @@
 import { Emoji } from "@/entity/Emoji";
-import { Tag } from "@/shared/const/common";
 import { Badge } from "@/shared/ui/Badge";
 import { Flex } from "@/shared/ui/Flex";
 import { Heading } from "@/shared/ui/Heading";
 import { Text } from "@/shared/ui/Text";
 import { memo } from "react";
-import { SameArticle } from "../model/SameArticle";
-import EmojiIcon from "@/shared/assets/emoji2.svg";
+import { SameArticle } from "../model/type/SameArticle";
 
 interface SameProps {
   list: SameArticle[];
@@ -29,23 +27,16 @@ export const Same = memo((props: SameProps) => {
               <Flex align="center" gap={8}>
                 <Badge size="xs" theme="orange">
                   <Text className="text-xs" theme="white">
-                    {Tag.Politics}
+                    {el.tag}
                   </Text>
                 </Badge>
-                <Text>{el.date}</Text>
+                <Text theme="black" className="text-xs">
+                  {el.date}
+                </Text>
               </Flex>
-              <Text className="font-medium">
-                Синоптик спрогнозировал срок наступления бабьего лета
-              </Text>
+              <Text className="font-medium leading-[18.75px]">{el.text}</Text>
             </Flex>
-            <Emoji
-              className="px-4 pb-3"
-              emojies={{
-                comments: 1,
-                Emojies: [{ count: 6, icon: <EmojiIcon /> }],
-                selected: 7,
-              }}
-            />
+            <Emoji emojies={el.imoji} />
           </Flex>
         ))}
       </Flex>
