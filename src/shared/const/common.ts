@@ -1,4 +1,4 @@
 export enum Tag {
-  Politics = "Politics",
-  Buisness = "Buisness",
+  Politics = "Политика",
+  Buisness = "Бизнес",
 }

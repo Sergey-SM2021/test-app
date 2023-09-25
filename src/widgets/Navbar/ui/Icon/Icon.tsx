@@ -2,7 +2,7 @@ import { Flex } from "@/shared/ui/Flex";
 import { ReactNode, memo } from "react";
 
 interface IconProps {
-  icon: ReactNode
+  icon: ReactNode;
 }
 
 export const Icon = memo((props: IconProps) => {
@@ -11,7 +11,7 @@ export const Icon = memo((props: IconProps) => {
     <Flex
       align="center"
       justify="center"
-      className="rounded-full bg-black text-white w-9 h-9"
+      className="rounded-full bg-black-500 text-white-500 w-9 h-9"
     >
       {icon}
     </Flex>

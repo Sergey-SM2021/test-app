@@ -15,15 +15,15 @@ interface SameProps {
 export const Same = memo((props: SameProps) => {
   const { list } = props;
   return (
-    <Flex direction="col" className="p-8 bg-white-500" gap={24}>
-      <Heading>{"Читайте также >"}</Heading>
+    <Flex direction="col" className="p-8 bg-white-500 rounded-xl" gap={24}>
+      <Heading className="font-bold">{"Читайте также >"}</Heading>
       <Flex gap={16}>
         {list.map((el, index) => (
           <Flex
             direction="col"
             gap={24}
             key={index}
-            className="bg-gray-400 rounded-xl px-4 py-3"
+            className="bg-gray-400 rounded-xl px-4 py-3 w-[245px]"
           >
             <Flex direction="col" gap={8}>
               <Flex align="center" gap={8}>

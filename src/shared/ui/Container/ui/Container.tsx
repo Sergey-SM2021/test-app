@@ -7,6 +7,6 @@ interface ContainerProps extends PropsWithChildren {
 export const Container = (props: ContainerProps) => {
   const { children, className } = props;
   return (
-    <div className={`max-w-[1440px] my-0 mx-auto ${className}`}>{children}</div>
+    <div className={`max-w-[1368px] my-0 mx-auto ${className}`}>{children}</div>
   );
 };

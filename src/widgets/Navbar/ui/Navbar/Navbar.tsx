@@ -21,7 +21,7 @@ export const Navbar = memo((props: NavbarProps) => {
             <Flex gap={20} className="flex-auto">
               {badges.map(({ icon, text }, index) => (
                 <Badge key={index} theme="gray">
-                  <Flex>
+                  <Flex gap={4}>
                     {icon}
                     <Text>{text}</Text>
                   </Flex>

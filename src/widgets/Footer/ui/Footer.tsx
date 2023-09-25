@@ -10,7 +10,7 @@ interface FooterProps {}
 
 export const Footer = memo((props: FooterProps) => {
   return (
-    <div className="bg-gray-500 pt-10 px-36 pb-10">
+    <div className="bg-gray-500 pt-10 pb-10">
       <Container>
         <div className="grid grid-cols-5">
           <Flex direction="col" justify="space-between">

@@ -18,8 +18,8 @@ const config: Config = {
       },
       orange: {
         "500": "#FF6B00",
-      }
-    },
+      },
+    }
   },
   plugins: [],
 };

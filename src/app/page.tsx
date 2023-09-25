@@ -10,7 +10,7 @@ export default function Home() {
     <div className="bg-gray-400">
       <Navbar />
       <Container>
-        <Flex>
+        <Flex className="pt-6" gap={12}>
           <Sidebar />
           <Intro />
         </Flex>

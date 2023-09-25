@@ -9,7 +9,11 @@ interface SidebarProps {}
 export const Sidebar = memo((props: SidebarProps) => {
   return (
     <div className="w-[264px]">
-      <Flex gap={12} className="bg-black-500 px-5 py-3 rounded-xl">
+      <Flex
+        gap={12}
+        align="center"
+        className="bg-black-500 px-5 py-3 rounded-xl w-[264px] h-[56px]"
+      >
         <Power className="text-orange-500" />
         <Text theme="white">Лента</Text>
       </Flex>
