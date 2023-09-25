@@ -30,7 +30,7 @@ export const Incidents = memo((props: IncidentsProps) => {
               <Text className="font-light px-3 text-xs" theme="gray">
                 {el.date}
               </Text>
-              <Text className="font-medium px-3">{el.text}</Text>
+              <Text className="font-medium px-3 leading-[18.75px]">{el.text}</Text>
             </Flex>
             <Emoji className="px-4 pb-3" emojies={el.imoji} />
           </Flex>
