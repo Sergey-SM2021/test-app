@@ -36,6 +36,7 @@ export const Tape = memo((props: TapeProps) => {
             ))}
           </Flex>
         </Flex>
+        {/* @ts-ignore */}
         <marquee
           className={
             "bg-black-500 text-white-500 h-10 rounded-b-lg flex items-center"
@@ -47,6 +48,7 @@ export const Tape = memo((props: TapeProps) => {
           ВАЖНАЯ НОВОСТЬ 🔥 ОЧЕНЬ ВАЖНАЯ НОВОСТЬ 🔥 ОЧЕНЬ ВАЖНАЯ НОВОСТЬ 🔥
           ОЧЕНЬ ВАЖНАЯ НОВОСТЬ 🔥 ОЧЕНЬ ВАЖНАЯ НОВОСТЬ 🔥 ОЧЕНЬ ВАЖНАЯ НОВОСТЬ
           🔥 ОЧЕНЬ ВАЖНАЯ НОВОСТЬ 🔥`}
+          {/* @ts-ignore */}
         </marquee>
       </Flex>
     </div>
