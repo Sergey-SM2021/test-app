@@ -11,7 +11,7 @@ export default function Home() {
       <Navbar />
       <Container>
         <Flex className="pt-6" gap={12}>
-          <Sidebar />
+          {/* <Sidebar /> */}
           <Intro />
         </Flex>
       </Container>
